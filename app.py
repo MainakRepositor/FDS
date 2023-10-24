@@ -10,7 +10,7 @@ warnings.filterwarnings("ignore")
 
 
 st.set_page_config(
-    page_title="Mango Leaf Disease Detection",
+    page_title="Fungus Detection System",
     page_icon = ":mushroom:",
     initial_sidebar_state = 'auto'
 )
@@ -81,7 +81,7 @@ else:
     x = random.randint(98,99)+ random.randint(0,99)*0.01
     st.sidebar.error("Accuracy : " + str(x) + " %")
 
-    class_names = ['H1','H2','H3','H4','H5']
+    class_names = ['H1','H2','H3','H5','H6']
 
     string = "Detected Fungus Breed : " + class_names[np.argmax(predictions)]
     st.sidebar.success(string)
